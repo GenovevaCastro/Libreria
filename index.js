@@ -11,7 +11,7 @@ function mdLinks(filePath, options) {
     }
   })
 }
-let filePath = "README.md"
+let filePath = "test/README.md"
 let options = {validate:true}
 mdLinks(filePath, options).then(response => {
   console.log("correcto", response)

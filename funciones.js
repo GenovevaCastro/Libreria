@@ -72,6 +72,7 @@ function findLinksInFile(fileContent) {
 
 function validateLinks(links,file) {
     let promisesArray = []
+    console.log
     links.forEach(link => {
         let linkClean = ""
         if(link.substring(link.length-1,link.length) == ")"){
@@ -144,7 +145,11 @@ readFiles(pathAbsolute)*/
 module.exports={
     validatePath,
     fileIsMd,
-    validatePathAbsolute
+    validatePathAbsolute,
+    changeToAbsolute,
+    filesInDirectory,
+    findLinksInFile,
+    validateLinks
 }
 
 
